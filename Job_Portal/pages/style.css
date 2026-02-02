@@ -1,0 +1,179 @@
+/* ===== GLOBAL RESET & BODY ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    text-align: center;
+}
+
+/* ===== HEADER (ALL PAGES) ===== */
+header {
+    background-color: #2c7be5;
+    color: white;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 10px auto 0;
+}
+
+header img {
+    margin-top: 15px;
+}
+
+/* ===== NAVIGATION BUTTONS (LANDING PAGE) ===== */
+#Navigationdiv {
+    display: inline-block;
+}
+
+#Navigationdiv li {
+    list-style: none;
+}
+
+#Navigationdiv button {
+    width: 220px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #2c7be5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#Navigationdiv button:hover {
+    background-color: #1a5dcc;
+}
+
+/* ===== INFO SECTION (LANDING PAGE) ===== */
+#Infodiv {
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#Infodiv h2 {
+    margin-bottom: 15px;
+}
+
+#Infodiv ul {
+    text-align: left;
+    display: inline-block;
+}
+
+#Infodiv li {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+/* ===== FORMS (LOGIN & SIGNUP) ===== */
+form {
+    background-color: white;
+    width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+/* Labels */
+form label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Inputs */
+form input[type="email"],
+form input[type="password"],
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Submit Button */
+form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    background-color: #2c7be5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1a5dcc;
+}
+
+/* ===== COMPANIES PAGE ===== */
+.company-card {
+    background-color: white;
+    width: 70%;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.company-card img {
+    margin-bottom: 10px;
+}
+
+.company-card h2 {
+    margin: 10px 0;
+    color: #2c7be5;
+}
+
+.company-card p {
+    font-size: 15px;
+}
+
+/* ===== DIVIDER ===== */
+hr {
+    width: 60%;
+    margin: 30px auto;
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+}
+
+/* ===== FOOTER (ALL PAGES) ===== */
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 14px;
+}
+
+#footerdiv {
+    background-color: #222;
+    color: white;
+}
+
+footer a {
+    color: #2c7be5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
