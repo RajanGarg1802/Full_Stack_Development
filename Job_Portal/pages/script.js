@@ -5,8 +5,7 @@ let experienceinput = document.querySelector("#Experience");
 let div = document.querySelector("#newdivcontainer");
 let btninput = document.querySelector("#submitbutton");
 
-let editDiv = null; // to track which job is being edited
-
+let editDiv = null; 
 btninput.addEventListener("click", postnewjob);
 
 function postnewjob(e){
@@ -18,7 +17,6 @@ function postnewjob(e){
     let expname = experienceinput.value;
 
     if(editDiv === null){
-        // CREATE NEW JOB
         let mydiv = document.createElement('div');
         mydiv.style.border = "1px solid black";
         mydiv.style.margin = "10px";
@@ -35,12 +33,10 @@ function postnewjob(e){
 
         div.appendChild(mydiv);
 
-        // DELETE
         mydiv.querySelector(".delete").addEventListener("click", function(){
             mydiv.remove();
         });
 
-        // UPDATE
         mydiv.querySelector(".update").addEventListener("click", function(){
             jobnameinput.value = postname;
             companynameinput.value = compname;
@@ -51,7 +47,6 @@ function postnewjob(e){
         });
 
     } else {
-        // UPDATE EXISTING JOB
         editDiv.innerHTML = `
             <h2>Job Title: ${postname}</h2>
             <h2>Company Name: ${compname}</h2>
@@ -61,7 +56,6 @@ function postnewjob(e){
             <button class="delete">Delete</button>
         `;
 
-        // reattach buttons
         editDiv.querySelector(".delete").addEventListener("click", function(){
             editDiv.remove();
         });
@@ -71,14 +65,11 @@ function postnewjob(e){
             companynameinput.value = compname;
             locationinput.value = locname;
             experienceinput.value = expname;
-
-            editDiv = editDiv;
         });
 
         editDiv = null;
     }
 
-    // clear inputs
     jobnameinput.value = "";
     companynameinput.value = "";
     locationinput.value = "";
